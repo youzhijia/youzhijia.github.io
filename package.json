@@ -1,11 +1,11 @@
 {
-  "name": "striving3",
+  "name": "youzhijia",
   "version": "0.0.1",
   "description": "a react application powerd by zola",
   "scripts": {
     "start": "ENVIRONMENT=development redskull start --dashboard false",
     "test": "ENVIRONMENT=testing redskull build",
-    "build": "ENVIRONMENT=production redskull build --publicPath https://striving3.github.io/dist/ && cp -rf ./dist/index.html ./index.html"
+    "build": "ENVIRONMENT=production redskull build --publicPath https://youzhijia.github.io/dist/ && cp -rf ./dist/index.html ./index.html"
   },
   "license": "ISC",
   "dependencies": {
