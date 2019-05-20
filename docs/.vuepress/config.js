@@ -8,7 +8,7 @@ module.exports = {
     ['link', { rel: 'manifest', href: '/manifest.json' }],
     ['link', { rel: 'apple-touch-icon', href: '/img/favicon.png' }],
   ],
-  dest: './docs/.vuepress/dist',
+  dest: 'public',
   // base: `/${basePath}/`,
   serviceWorker: true,
   evergreen: true,
