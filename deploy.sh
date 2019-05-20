@@ -20,3 +20,5 @@ git push -f git@github.com:youzhijia/youzhijia.github.io.git master
 
 # 如果发布到 https://<USERNAME>.github.io/<REPO>
 # git push -f git@github.com:youzhijia/blog.git master:dev
+
+cd -
