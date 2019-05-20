@@ -9,7 +9,7 @@ module.exports = {
     ['link', { rel: 'apple-touch-icon', href: '/img/favicon.png' }],
   ],
   dest: 'public',
-  // base: `/${basePath}/`,
+  base: `/${basePath}/`,
   serviceWorker: true,
   evergreen: true,
   themeConfig: {

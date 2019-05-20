@@ -16,9 +16,9 @@ git add .
 git commit -m 'deploy'
 
 # 如果发布到 https://<USERNAME>.github.io 推到仓库的 master 分支
-git push -f git@github.com:youzhijia/youzhijia.github.io.git master
+# git push -f git@github.com:youzhijia/youzhijia.github.io.git master
 
 # 如果发布到 https://<USERNAME>.github.io/<REPO>
-# git push -f git@github.com:youzhijia/blog.git master:dev
+git push -f git@github.com:youzhijia/blog.git master:gh-pages
 
 cd -
