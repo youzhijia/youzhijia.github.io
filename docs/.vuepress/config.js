@@ -4,15 +4,14 @@ module.exports = {
   title: '由志佳-前端积累',
   description: '种一棵树最好的时间是十年前，其次就是现在',
   head: [
-    ['link', { rel: 'icon', href: 'imgs/favicon.png' }], 
-    ['link', { rel: 'manifest', href: 'public/manifest.json' }],
-    ['link', { rel: 'apple-touch-icon', href: 'favicon.png' }],
+    ['link', { rel: 'icon', href: '/img/favicon.png' }], 
+    ['link', { rel: 'manifest', href: '/manifest.json' }],
+    ['link', { rel: 'apple-touch-icon', href: '/img/favicon.png' }],
   ],
   dest: './docs/.vuepress/dist',
   base: `/${basePath}/`,
   serviceWorker: true,
   evergreen: true,
-  ga: 'UA-112738831-1',
   themeConfig: {
     nav: [
       {text: '主页', link: '/'},
@@ -23,7 +22,7 @@ module.exports = {
         items: [
             {
                 text: '随笔',
-                link: '/article/essay/'
+                link: '/essay/'
             }
         ]
       },
@@ -42,9 +41,9 @@ module.exports = {
         children: ['week2/fn']
       }],
       '/about/': [['info','个人信息']],
-      '/article/essay/': ['/article/essay/aaa'],
+      '/essay/': ['/essay/aaa'],
     },
-    sidebarDepth: 2,
+    sidebarDepth: 3,
     lastUpdated: 'Last Updated'
   }
 }
