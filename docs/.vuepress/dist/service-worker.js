@@ -21,15 +21,15 @@ importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox
 self.__precacheManifest = [
   {
     "url": "404.html",
-    "revision": "65a14acd87215dc27d04d5a54fe6a4d7"
+    "revision": "d2f22915c39bd5eaa2ea981681b2d553"
   },
   {
     "url": "about/index.html",
-    "revision": "da83956ecdbdff324e2e865339fd845e"
+    "revision": "238791ea5c4d5216ed2bc407a49d2da7"
   },
   {
     "url": "about/info.html",
-    "revision": "7eb0d3381a2aa1e5372845df17c4fc85"
+    "revision": "7c634bf2ae9f6bb9da7f49c21a26aa65"
   },
   {
     "url": "assets/css/0.styles.1ac3af9e.css",
@@ -92,16 +92,16 @@ self.__precacheManifest = [
     "revision": "805776fad04a28707e54805c047e3024"
   },
   {
-    "url": "assets/js/app.a661bbc4.js",
-    "revision": "af958358c4556e051ed5619571e4b27d"
+    "url": "assets/js/app.b96e9b65.js",
+    "revision": "677e308c90794c6de561b3de903a6752"
   },
   {
     "url": "essay/aaa.html",
-    "revision": "af41e75e7038d96835490968d965a761"
+    "revision": "9710b704909aebd6c8aa2d787b1692b7"
   },
   {
     "url": "essay/index.html",
-    "revision": "740ca2894d9b26e21e250a5c23a866c7"
+    "revision": "0bb75fa11b70e97918a104ec024aa7e9"
   },
   {
     "url": "img/favicon.png",
@@ -109,31 +109,31 @@ self.__precacheManifest = [
   },
   {
     "url": "index.html",
-    "revision": "c61497181d2a35168df7170a74d59e15"
+    "revision": "9ea7327d858f4fdb9598b52ebfec6f89"
   },
   {
     "url": "study/index.html",
-    "revision": "ff73d7b387f138cd0dd3efc9c004d310"
+    "revision": "f72cca4b54cafc09140092f106235d12"
   },
   {
     "url": "working/index.html",
-    "revision": "b4dc07498120c8c79483a07262cdfef6"
+    "revision": "aafbc9b0e19dea2fe372c0c0209c2ab4"
   },
   {
     "url": "yideng/index.html",
-    "revision": "91c2b837f95f8bfb32d806968fe84cd5"
+    "revision": "39d32fdee0e7cdc16944867007290569"
   },
   {
     "url": "yideng/week0/fn.html",
-    "revision": "23ae6744f69682e2e80fe93d3d0bc145"
+    "revision": "e7b70453e0f1f3c606d1bfe49acade3b"
   },
   {
     "url": "yideng/week1/fn.html",
-    "revision": "1dcf29ec9aa343db434061a0e38a32ac"
+    "revision": "6e82b6a122f255a75033d37bf874e400"
   },
   {
     "url": "yideng/week2/fn.html",
-    "revision": "f5db84ff6b71163159f8f18dccdee170"
+    "revision": "49c9d3d458e7221db2c79e50a6090923"
   }
 ].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
