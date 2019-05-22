@@ -74,22 +74,22 @@ module.exports = {
       }],
       '/lianjia/': [{
         title: '基础',
-        children: ['basic/standard', 'basic/git']
+        children: ['basic/standard', 'basic/gitBase']
       }, {
         title: '项目',
-        children: ['project/1']
+        children: []
       }, {
         title: '团队',
         children: ['team/standard']
       }, {
         title: '业务',
-        children: ['business/1']
+        children: []
       }, {
         title: '绩效',
-        children: ['performance/1']
+        children: []
       }, {
         title: '分享',
-        children: ['share/1']
+        children: []
       }],
       '/about/': ['resume', 'interview'],
     },
