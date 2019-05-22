@@ -1,0 +1,98 @@
+# HTML核心技巧
+
+## 同源策略
+
+* 含义：域名、协议、端口相同
+* 目的：保证用户信息的安全，防止恶意的获取网站数据
+* 限制对象（跨域）：Cookie、LocalStorage、IndexDB无法读取；DOM无法获取；Ajax请求无法发送
+
+## 如何设置同源策略？（hosts）
+
+当网页的一级域名相同，二级域名不同时，设置**document.domain**，可以共享cookie
+
+## 完全不同源的网页，如何解决跨域窗口的通讯问题?
+
+* 片段识别符（改变hash）
+* window.name
+* 跨文档通讯API（window.postMessage）
+
+## window.postMessage
+
+```
+// 父：http://aaa.com 子：http://bbb.com
+var A = window.open('http://bbb.com','title');//父窗口打开子窗口
+A.postMessage('儿子','http://bbb.com');//父窗口向特定子窗口发信息
+A.postMessage('儿子们');//父窗口向所有子窗口发信息
+window.opener.postMessage('皇阿玛','http://aaa.com');//子窗口向父窗口发信息
+```
+
+## 如何突破同源策略？前端跨域有几种方案?
+
+* HTML标签：img、iframe、script（jsonp）、link（background）
+* JSONP：基本思想：网页通过添加script元素，向服务器请求JSON数据，服务器收到请求后，将数据放到一个指定名字的回调函数里传过来
+* WebSocket
+* CORS
+
+## image测试网速
+
+```
+//已知图片大小，已知时间差，网速=kb/s
+var startTime = Date.now();
+var image = new Image();
+image.crossOrigin = "anonymous";
+//写入一个图片路径用于测速，放到服务器中，会形成一个1*1的透明像素
+image.src = "http://www.yideng.com/ok.png";
+//图片是有回调的
+image.onload = function(){
+  var endTime = Date.now();
+  var w = 4/(endTime-startTime);//w会在1-1000之间
+}
+```
+
+* navigator.sendBeacon() 用于通过HTTP将少量数据异步传输到Web服务器
+* window.requestAnimationFrame() 告诉浏览器希望执行动画并请求浏览器在下一次重绘之前调用指定的函数来更新动画，该方法使用一个回调函数作为参数，这个回调函数会在浏览器重绘之前调用。
+
+## 使用image上报数据，为什么不用Ajax?
+
+例子：https://gsp0.baidu.com/5aAHeD3nKhI2p27j8IqW0jdnxx1xbK/tb/pms/img/st.gif?ts=55w&t=time&sid=jktkesaqljy&dv=3&page=110_25&p=110&z_mapload_first_normal_cityindex=1691
+
+* 不需要额外的数据接口
+* 上报数据不需要数据返回
+* 不用占用业务资源
+
+## iframe对远程localstorage扩容
+
+```
+//<iframe src="storage.html" frameborder="0"></iframe>
+window.frames[0].postMessage('name','11');
+```
+
+```
+window.addEventListener("message",function(e){
+  if(e.source !== window.parent){
+    return;
+  }
+  localStorage.setItem(e.data.key, e.date.value);
+})
+```
+
+## HTML语义化
+
+* div布局，不进行无意义的包裹
+* 少写html，减少DOM渲染的时间，减少整个文件的大小
+
+```
+<header>
+  <nav></nav>
+</header>
+<article>
+  <section></section>
+  <aside></aside>
+</article>
+<footer>
+  <address></address>
+</footer>
+```
+
+
+
