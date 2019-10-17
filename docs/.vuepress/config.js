@@ -196,7 +196,7 @@ module.exports = {
           children: []
         }, {
           title: 'React',
-          children: ['react/diff']
+          children: []
         }, {
           title: 'Vue',
           children: []
