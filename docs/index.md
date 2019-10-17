@@ -1,7 +1,7 @@
 ---
 home: true
 actionText: 开始 →
-actionLink: /yideng/
+actionLink: /accumulate/
 features:
 - title: 学习笔记
   details: 前端技术分类整理

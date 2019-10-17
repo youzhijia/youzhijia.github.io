@@ -1,8 +1,8 @@
 const basePath = 'blog'
 
 module.exports = {
-  title: '由志佳-前端积累',
-  description: '种一棵树最好的时间是十年前，其次就是现在',
+  title: '由志佳-FE',
+  description: '当我有了达成某个目标的行动直觉，就要5、4、3、2、1行动起来，打破犹豫不决、过度思考的习惯，简单粗暴的战胜拖延症！',
   head: [
     ['link', { rel: 'icon', href: '/img/favicon.png' }], 
     ['link', { rel: 'manifest', href: '/manifest.json' }],
@@ -15,29 +15,101 @@ module.exports = {
   themeConfig: {
     nav: [
       {text: '主页', link: '/'},
-      {text: '学习', link: '/yideng/'},
+      {text: '积累', link: '/accumulate/'},
+      {
+        text: '学习',
+        items: [
+          {
+            text: '书籍',
+            link: '/studying/'
+          },
+          {
+            text: '京程一灯',
+            link: '/yideng/'
+          },
+          {
+            text: '慕课网',
+            link: '/muke/'
+          }
+        ]
+      },
       {
         text: '工作',
         items: [
-            {
-                text: '链家网（贝壳）',
-                link: '/lianjia/'
-            }
+          {
+            text: '链家网（贝壳）',
+            link: '/lianjia/'
+          }
         ]
       },
       {
-        text: '标签',
+        text: '生活',
         items: [
-            {
-                text: 'awesome-bookmarks',
-                link: 'https://panjiachen.github.io/awesome-bookmarks/'
-            }
+          {
+            text: '阅读',
+            link: '/reading/'
+          },
+          {
+            text: '育儿',
+            link: '/education/'
+          },
+          {
+            text: '健身',
+            link: '/fitness/'
+          }
         ]
       },
-      {text: 'Github', link: 'https://github.com/youzhijia'},
-      {text: '关于', link: '/about/'},
+      {
+        text: '面试',
+        items: [
+          {
+            text: '技术题库',
+            link: '/tech-QA/'
+          },
+          {
+            text: '项目题库',
+            link: '/project-QA/'
+          },
+          {
+            text: '开放题库', 
+            link: '/open-QA/'
+          },
+          {
+            text: '面经', 
+            link: '/others-QA/'
+          },
+        ]
+      },
+      {
+        text: '博客',
+        items: [
+          {
+            text: 'awesome-bookmarks',
+            link: 'https://panjiachen.github.io/awesome-bookmarks/'
+          },
+          {
+            text: 'yhlben',
+            link: 'https://yhlben.github.io/blog/'
+          }
+        ]
+      },
+      {
+        text: 'Github',
+        items: [
+          {
+            text: '我的Github',
+            link: 'https://github.com/youzhijia'
+          }
+        ]
+      },
     ],
     sidebar: {
+      '/accumulate/':[
+
+      ],
+      '/studying/':[
+
+      ],
       '/yideng/': [{
         title: '预读',
         children: ['week0/ES5', 'week0/HTML']
@@ -72,6 +144,15 @@ module.exports = {
         title: '设计模式与网络安全专场',
         children: ['week10/designMode']
       }],
+      '/muke/':[
+        {
+          title: '免费课',
+          children: []
+        }, {
+          title: '实战课',
+          children: []
+        },
+      ],
       '/lianjia/': [{
         title: '基础',
         children: ['basic/standard', 'basic/gitBase']
@@ -91,7 +172,63 @@ module.exports = {
         title: '分享',
         children: []
       }],
-      '/about/': ['resume', 'interview'],
+      '/reading/':[
+
+      ],
+      '/education/':[
+
+      ],
+      '/fitness/':[
+
+      ],
+      '/tech-QA/':[
+        {
+          title: 'HTML',
+          children: []
+        }, {
+          title: 'CSS',
+          children: []
+        }, {
+          title: 'JS',
+          children: []
+        }, {
+          title: 'ES6',
+          children: []
+        }, {
+          title: 'React',
+          children: ['react/diff']
+        }, {
+          title: 'Vue',
+          children: []
+        }, {
+          title: '算法',
+          children: []
+        }, {
+          title: '浏览器',
+          children: []
+        }, {
+          title: '性能优化',
+          children: []
+        }, {
+          title: 'Webpack',
+          children: []
+        }, {
+          title: 'Node',
+          children: []
+        }, {
+          title: 'Typescript',
+          children: []
+        }, 
+      ],
+      '/project-QA/':[
+
+      ],
+      '/open-QA/':[
+
+      ],
+      '/others-QA/':[
+
+      ],
     },
     sidebarDepth: 3,
     lastUpdated: 'Last Updated'

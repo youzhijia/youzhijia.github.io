@@ -2,7 +2,7 @@
 
 ## 立即执行函数
 
-```
+``` javascript
 (function (){
 	
 })()
@@ -10,7 +10,7 @@
 
 ## 变量提升
 
-```
+``` javascript
 var a = 20;
 (function (){
   console.log(a);//undefined
@@ -24,7 +24,7 @@ var a = 20;
 * AO：函数执行时存储的参数
 * VO会激活AO
 
-```
+``` javascript
 if(false){
   var a = 1;
   let c = 2;
@@ -43,7 +43,7 @@ console.log('out:'+b);//报错 b is not defined
 
 ## ES5里如何实现let
 
-```
+```javascript
 if(true){
   try{
     throw 1;
@@ -56,7 +56,7 @@ console.log(a);//undefined
 
 try catch 是块级作用域, with 也是块级作用域，但是with会延长作用域链，因为with只对对象上已有的值进行赋值
 
-```
+```javascript
 var obj = {a:1};
 with(obj){
   b = 2;
@@ -75,7 +75,7 @@ console.log(b);//2
 2. apply
 3. bind 返回一个新对象
 
-```
+```javascript
 var user = {
   age:20,
   init:function(){
@@ -92,7 +92,7 @@ var s2 = user.init.bind(data);
 s2();
 ```
 
-```
+```javascript
 this.age = 10;
 var user = {
   age:20,
@@ -106,7 +106,7 @@ var user = {
 user.init();
 ```
 
-```
+```javascript
 this.age = 10;
 var user = {
   age:20,
@@ -123,7 +123,7 @@ user.init();
 * 闭包可以保护内部的变量
 * 闭包造成内存泄漏，使用后要==null
 
-```
+```javascript
 function f1(){
   var n = 1;
   function f2(){
@@ -137,7 +137,7 @@ result();
 result();
 ```
 
-```
+```javascript
 function test(){
   var a = 1;
   return function(){
@@ -154,7 +154,7 @@ test();
 * constructor 就是对应的函数
 * prototype 按引用传递 Object.create创建原型链的副本
 
-```
+```javascript
 var Car = function(color){
   this.color = color;
 }
@@ -183,7 +183,7 @@ console.log(m);//BWM { color: "red" }
 
 函数提升级别比变量高
 
-```
+```javascript
 (function (){
   var a = 20;
   function a(){};
@@ -194,7 +194,7 @@ console.log(m);//BWM { color: "red" }
 * 按值传递：数值、字符串、布尔类型
 * 按引用传递：数组、对象
 
-```
+```javascript
 (function (){
   var a = 20;
   function a(){};
@@ -209,7 +209,7 @@ console.log(m);//BWM { color: "red" }
 
 函数的变量是按值传递的，但是值的内容的指向与值本身有关，若值是对象，则是按引用传递的
 
-```
+```javascript
 function test(m){
   m = {v:5};
   //m.v = 5;
@@ -223,7 +223,7 @@ console.log(m);//undefined
 
 构造函数的属性比原型链的优先级高
 
-```
+```javascript
 function test(){
   this.a = 20;
 }
@@ -234,7 +234,7 @@ console.log(q.a);//20
 
 整个类是基于js原型链实现的，class实际就是function
 
-```
+```javascript
 class test{
   a(){
     console.log(1);
@@ -248,7 +248,7 @@ test.prototype.a = function(){
 
 ## 如何正确输出li里的内容
 
-```
+```javascript
 //HTML
 //<ul>
   //<li>1</li>
@@ -278,13 +278,13 @@ for(var i=0;i<list_li.length;i++){
 
 if else && switch 能解决问题 但是性能差
 
-```
+```javascript
 10 - Math.floot(n/10)
 ```
 
 ## var s = 'abc' 怎么变成数组
 
-```
+```javascript
 var s = 'abc';
 [...s]
 Array.prototype.slice.call(s);

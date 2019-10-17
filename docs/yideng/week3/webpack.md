@@ -2,7 +2,7 @@
 
 AMD && CMD
 
-```
+```javascript
 //requireJS => CMD
 require(['math'], function(math){
     math.add(2,3)
@@ -34,7 +34,7 @@ webpack配置：
 - resolve：配置资源别名/扩展名等
 - plugins：插件，比loader更强大
 
-```
+```javascript
 var webpack = require('webpack')
 console.log(webpack) //iTerm当前目录node 文件名+扩展名，可输出结果
 module.export
