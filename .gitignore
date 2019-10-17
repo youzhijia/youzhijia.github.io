@@ -1,0 +1,6 @@
+# Foders
+.DS_Store
+node_modules/
+docs/.vuepress/dist/
+.vscode
+dist/
