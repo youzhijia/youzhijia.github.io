@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>git使用过程可能遇到的问题 | 由志佳-FE</title>
+    <meta name="description" content="当我有了达成某个目标的行动直觉，就要5、4、3、2、1行动起来，打破犹豫不决、过度思考的习惯，简单粗暴的战胜拖延症！">
+    <link rel="icon" href="/img/favicon.png">
+  <link rel="manifest" href="/manifest.json">
+  <link rel="apple-touch-icon" href="/img/favicon.png">
+    
+    <link rel="preload" href="/assets/css/0.styles.0fe57943.css" as="style"><link rel="preload" href="/assets/js/app.0312dbaf.js" as="script"><link rel="preload" href="/assets/js/8.28133af1.js" as="script"><link rel="prefetch" href="/assets/js/10.64eb2afc.js"><link rel="prefetch" href="/assets/js/11.cd756451.js"><link rel="prefetch" href="/assets/js/12.29942354.js"><link rel="prefetch" href="/assets/js/13.dd1193f8.js"><link rel="prefetch" href="/assets/js/14.84728cdc.js"><link rel="prefetch" href="/assets/js/15.1374a4e5.js"><link rel="prefetch" href="/assets/js/16.15301414.js"><link rel="prefetch" href="/assets/js/17.44b9b544.js"><link rel="prefetch" href="/assets/js/18.0364fa3a.js"><link rel="prefetch" href="/assets/js/19.99a13de4.js"><link rel="prefetch" href="/assets/js/2.b8e2b7d4.js"><link rel="prefetch" href="/assets/js/20.9431aa76.js"><link rel="prefetch" href="/assets/js/21.31bd1eba.js"><link rel="prefetch" href="/assets/js/22.50c81f48.js"><link rel="prefetch" href="/assets/js/23.927765d5.js"><link rel="prefetch" href="/assets/js/24.4ae1f614.js"><link rel="prefetch" href="/assets/js/25.425b0bb8.js"><link rel="prefetch" href="/assets/js/26.bd881bc4.js"><link rel="prefetch" href="/assets/js/27.9f3b32ee.js"><link rel="prefetch" href="/assets/js/28.88ca676e.js"><link rel="prefetch" href="/assets/js/29.4449a810.js"><link rel="prefetch" href="/assets/js/3.496a6e09.js"><link rel="prefetch" href="/assets/js/30.217d44b9.js"><link rel="prefetch" href="/assets/js/31.9754534f.js"><link rel="prefetch" href="/assets/js/32.99c8809d.js"><link rel="prefetch" href="/assets/js/33.f0ebde8f.js"><link rel="prefetch" href="/assets/js/34.bba0ce15.js"><link rel="prefetch" href="/assets/js/35.94aa08ac.js"><link rel="prefetch" href="/assets/js/36.31fba07c.js"><link rel="prefetch" href="/assets/js/37.01b34bbb.js"><link rel="prefetch" href="/assets/js/38.404d82b5.js"><link rel="prefetch" href="/assets/js/39.ddfb5cc3.js"><link rel="prefetch" href="/assets/js/4.a3d0a938.js"><link rel="prefetch" href="/assets/js/40.0c0be544.js"><link rel="prefetch" href="/assets/js/5.426f8225.js"><link rel="prefetch" href="/assets/js/6.ab53aa62.js"><link rel="prefetch" href="/assets/js/7.d68df735.js"><link rel="prefetch" href="/assets/js/9.a1615c29.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.0fe57943.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">由志佳-FE</span></a> <div class="links" style="max-width:nullpx;"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">主页</a></div><div class="nav-item"><a href="/accumulate/" class="nav-link">积累</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">学习</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/studying/" class="nav-link">书籍</a></li><li class="dropdown-item"><!----> <a href="/yideng/" class="nav-link">京程一灯</a></li><li class="dropdown-item"><!----> <a href="/muke/" class="nav-link">慕课网</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">工作</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/lianjia/" class="nav-link router-link-active">链家网（贝壳）</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">生活</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/reading/" class="nav-link">阅读</a></li><li class="dropdown-item"><!----> <a href="/education/" class="nav-link">育儿</a></li><li class="dropdown-item"><!----> <a href="/fitness/" class="nav-link">健身</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">面试</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/tech-QA/" class="nav-link">技术题库</a></li><li class="dropdown-item"><!----> <a href="/project-QA/" class="nav-link">项目题库</a></li><li class="dropdown-item"><!----> <a href="/open-QA/" class="nav-link">开放题库</a></li><li class="dropdown-item"><!----> <a href="/others-QA/" class="nav-link">面经</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">博客</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://panjiachen.github.io/awesome-bookmarks/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  awesome-bookmarks
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li><li class="dropdown-item"><!----> <a href="https://yhlben.github.io/blog/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  yhlben
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">Github</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://github.com/youzhijia" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  我的Github
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <div class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">主页</a></div><div class="nav-item"><a href="/accumulate/" class="nav-link">积累</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">学习</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/studying/" class="nav-link">书籍</a></li><li class="dropdown-item"><!----> <a href="/yideng/" class="nav-link">京程一灯</a></li><li class="dropdown-item"><!----> <a href="/muke/" class="nav-link">慕课网</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">工作</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/lianjia/" class="nav-link router-link-active">链家网（贝壳）</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">生活</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/reading/" class="nav-link">阅读</a></li><li class="dropdown-item"><!----> <a href="/education/" class="nav-link">育儿</a></li><li class="dropdown-item"><!----> <a href="/fitness/" class="nav-link">健身</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">面试</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/tech-QA/" class="nav-link">技术题库</a></li><li class="dropdown-item"><!----> <a href="/project-QA/" class="nav-link">项目题库</a></li><li class="dropdown-item"><!----> <a href="/open-QA/" class="nav-link">开放题库</a></li><li class="dropdown-item"><!----> <a href="/others-QA/" class="nav-link">面经</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">博客</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://panjiachen.github.io/awesome-bookmarks/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  awesome-bookmarks
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li><li class="dropdown-item"><!----> <a href="https://yhlben.github.io/blog/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  yhlben
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">Github</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://github.com/youzhijia" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  我的Github
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><div class="sidebar-group first collapsable"><p class="sidebar-heading open"><span>基础</span> <span class="arrow down"></span></p> <ul class="sidebar-group-items"><li><a href="/lianjia/basic/standard.html" class="sidebar-link">被喷的代码风格，你有吗？</a></li><li><a href="/lianjia/basic/gitBase.html" class="active sidebar-link">git使用过程可能遇到的问题</a><ul class="sidebar-sub-headers"></ul></li></ul></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>项目</span> <span class="arrow right"></span></p> <!----></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>团队</span> <span class="arrow right"></span></p> <!----></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>业务</span> <span class="arrow right"></span></p> <!----></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>绩效</span> <span class="arrow right"></span></p> <!----></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>分享</span> <span class="arrow right"></span></p> <!----></div></li></ul> </div> <div class="page"> <div class="content"><h1 id="git使用过程可能遇到的问题"><a href="#git使用过程可能遇到的问题" aria-hidden="true" class="header-anchor">#</a> git使用过程可能遇到的问题</h1> <p>最全的场景分析：<a href="https://github.com/k88hudson/git-flight-rules/blob/master/README_zh-CN.md#%E7%BC%96%E8%BE%91%E6%8F%90%E4%BA%A4editting-commits" target="_blank" rel="noopener noreferrer">git flight rules<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <p>1.常规开发</p> <div class="language- extra-class"><pre class="language-text"><code>// 首先确保自己在 master 且代码是最新的
+git checkout master
+git pull
+ 
+// 在最新的代码上建一个分支
+git checkout -b xxx
+ 
+// 在本地进行开发
+do something
+git commit -m &quot;zzz&quot;
+ 
+do something
+git commit -m &quot;yyy&quot;
+ 
+do something
+git commit -m &quot;www&quot;
+
+// 刚才提交了什么
+git show
+ 
+// 开发完成，push开发分支
+git push -u origin xxx
+ 
+// 在代码审核工具上创建 pull request
+ 
+// 根据别人的审核意见，修改代码
+do something
+git commit -m &quot;yyy&quot;
+ 
+do something
+git commit -m &quot;bbb&quot;
+ 
+// 将修改后的代码push
+git push
+ 
+// 审核通过，按按钮合并 pr
+</code></pre></div><p>2.审核过了之后有冲突</p> <div class="language- extra-class"><pre class="language-text"><code>// 首先把master上的代码更新一下
+git checkout mastera
+git pull
+
+// 然后把开发分支的代码rebase到最新的代码之上
+git checkout xxx
+git rebase master
+ 
+// 这时，会出现冲突，打开文件，手动把文件修改正确
+ 
+// 然后执行这个：
+git add .
+git rebase --continue
+ 
+// 这时，开发分支 xxx 已经和master没有冲突了，push上去
+git push
+ 
+// 在代码审核工具上，按按钮合并
+</code></pre></div><p>3.开发了一半的功能，不想commit也不想丢掉</p> <div class="language- extra-class"><pre class="language-text"><code>// 把修改暂存起来
+git add .
+git stash
+ 
+// 可以查看刚刚暂存的信息
+git stash list
+ 
+// 现在需要继续开发，把暂存的东西 pop 出来
+git stash pop
+ 
+// 现在再看暂存列表，已经清空了
+git stash list
+</code></pre></div><p>4.只提交某几个文件，其他几个文件暂存起来</p> <div class="language- extra-class"><pre class="language-text"><code>// 只提交这几个文件
+git add 1.js 2.js 3.js
+git commit -m &quot;zzz&quot;
+
+// 看一下，剩下的文件确实未提交
+git status
+
+// 暂存
+git add .
+git stash
+</code></pre></div><p>5.已经git add 的文件，想变回未add的状态</p> <div class="language- extra-class"><pre class="language-text"><code>git reset HEAD 1.js
+ 
+// 如果想把所有文件都未 add 的状态
+git reset HEAD .
+</code></pre></div><p>6.已经修改，但未add的文件，想变回未修改的状态</p> <div class="language- extra-class"><pre class="language-text"><code>git checkout -- 1.js
+ 
+// 如果想把所有文件都变回未修改的状态
+git checkout -- .
+</code></pre></div><p>7.已经commit了，但是不想要了，想回到上一个commit重新写</p> <div class="language- extra-class"><pre class="language-text"><code>// 回到上一个 commit，把这个 commit 的修改变成 unstaged changes
+git reset HEAD^
+
+// 把 unstaged changes 变回未修改的状态
+git checkout -- .
+ 
+// 重新写
+</code></pre></div><p>8.已经commit了，并且push了，但是不想要了，想回到上一个commit重新写</p> <div class="language- extra-class"><pre class="language-text"><code>// 同上，但是最后再push的时候需要加 -f
+ 
+git push -f
+</code></pre></div><p>9.上个方法太暴力了</p> <div class="language- extra-class"><pre class="language-text"><code>// 创建一个和上个提交完全相反的提交
+git revert HEAD
+git push
+</code></pre></div><p>10.如果master被回滚了，你需要将本地master强制与远程同步</p> <div class="language- extra-class"><pre class="language-text"><code>git reset --hard origin/master
+</code></pre></div><h3 id="你可能需要的工具"><a href="#你可能需要的工具" aria-hidden="true" class="header-anchor">#</a> 你可能需要的工具</h3> <p><a href="https://www.sourcetreeapp.com/" target="_blank" rel="noopener noreferrer">可视化工具 Source Tree<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a> + 命令行 = 效率、准确率提升</p> <h3 id="神奇的git-rebase"><a href="#神奇的git-rebase" aria-hidden="true" class="header-anchor">#</a> 神奇的git rebase</h3> <p>==学会使用rebase 替代 merge！==</p> <p>官方文档：https://git-scm.com/docs/git-rebase</p> <h3 id="编码质量与能力衡量标准"><a href="#编码质量与能力衡量标准" aria-hidden="true" class="header-anchor">#</a> 编码质量与能力衡量标准</h3> <p>统计某仓库下自己代码贡献量的脚本（需要装: gawk）</p> <div class="language- extra-class"><pre class="language-text"><code>git log --author=&quot;$(git config --get user.name)&quot; --pretty=tformat: --numstat | gawk '{ add += $1 ; subs += $2 ; loc += $1 - $2 } END { printf &quot;added lines: %s removed lines : %s total lines: %s\n&quot;,add,subs,loc }'
+</code></pre></div></div> <div class="page-edit"><!----> <div class="last-updated"><span class="prefix">Last Updated: </span> <span class="time">5/23/2019, 5:13:16 AM</span></div></div> <div class="page-nav"><p class="inner"><span class="prev">
+        ←
+        <a href="/lianjia/basic/standard.html" class="prev">
+          被喷的代码风格，你有吗？
+        </a></span> <span class="next"><a href="/lianjia/team/standard.html">
+          /lianjia/team/standard.html
+        </a>
+        →
+      </span></p></div> </div> <!----></div></div>
+    <script src="/assets/js/app.0312dbaf.js" defer></script><script src="/assets/js/8.28133af1.js" defer></script>
+  </body>
+</html>
