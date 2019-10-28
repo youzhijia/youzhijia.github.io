@@ -21,15 +21,15 @@ importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox
 self.__precacheManifest = [
   {
     "url": "404.html",
-    "revision": "cbe1fd720dcfac2a2ad1273653869e77"
+    "revision": "668931f3fb35b8a8e9749f3dd8e2b988"
   },
   {
     "url": "accumulate/index.html",
-    "revision": "dc7466d3be9093841291f944e9fc6caf"
+    "revision": "c24cca4f8a954701281dced14c52f7e3"
   },
   {
     "url": "accumulate/正则表达式.html",
-    "revision": "5089863980498f4c270d94aec47186d9"
+    "revision": "915f29d9abe4580d131abdcc3de8d247"
   },
   {
     "url": "assets/css/0.styles.0fe57943.css",
@@ -196,16 +196,16 @@ self.__precacheManifest = [
     "revision": "706cc4db0aa5be0769d3ca630350ef49"
   },
   {
-    "url": "assets/js/app.1d964ad8.js",
-    "revision": "98934d608101ada47ce09fe3c52b7915"
+    "url": "assets/js/app.0312dbaf.js",
+    "revision": "e38cc1f6f38ec5a66c646fbb990c3a0b"
   },
   {
     "url": "education/index.html",
-    "revision": "ae708f914e1838cd724b1d8efb5fcfeb"
+    "revision": "0931627cc4af3002b387edb8f2c55e70"
   },
   {
     "url": "fitness/index.html",
-    "revision": "96e1b0672e92016bec6ca44d512e2a42"
+    "revision": "a86137a8d429c283a894593d59228064"
   },
   {
     "url": "img/favicon.png",
@@ -225,135 +225,135 @@ self.__precacheManifest = [
   },
   {
     "url": "index.html",
-    "revision": "657318c15df7db12f0a3ec00ca4beff1"
+    "revision": "77750a564da43f12ad104786604e16e4"
   },
   {
     "url": "lianjia/basic/gitBase.html",
-    "revision": "4416f4c1bb43ee258e648da1e7296440"
+    "revision": "f880473a0ec7b7543f9b5ee9a294e326"
   },
   {
     "url": "lianjia/basic/standard.html",
-    "revision": "e92b520e2df5f49c2025bc941c0679db"
+    "revision": "5e33547fa83d84f0bce2fe4626fddb6d"
   },
   {
     "url": "lianjia/index.html",
-    "revision": "d209995dc0e73a00a5636aec757ce45f"
+    "revision": "3c6bf191b632233025c4d7f8b30a1f3c"
   },
   {
     "url": "lianjia/team/standard.html",
-    "revision": "c7d656c5f10f97bca5d602e2a399e2f9"
+    "revision": "0f99f3541eed43c35069a4703b489d87"
   },
   {
     "url": "muke/index.html",
-    "revision": "02388de762b798f2d46fcf6d3dd2e61e"
+    "revision": "9cffff062dfbb93fb481b200feac549b"
   },
   {
     "url": "open-QA/index.html",
-    "revision": "2b1c00eaa97cf016f818e2da5a0828b8"
+    "revision": "61745ec1e4533cd28139c6dc374745de"
   },
   {
     "url": "others-QA/index.html",
-    "revision": "bb1f5c805715c900994fa304508fd9fa"
+    "revision": "69f15f475d9bc906d31809b8452be30e"
   },
   {
     "url": "project-QA/index.html",
-    "revision": "5cd85c66ca8c04420e56c332067bef24"
+    "revision": "d35838a7f391df60013704ad8222bc4a"
   },
   {
     "url": "reading/index.html",
-    "revision": "9d42887e93fcb937e5cd3f4cd92509f4"
+    "revision": "eaab2fb0ce6ef0a042a79f156c97d493"
   },
   {
     "url": "studying/index.html",
-    "revision": "b446e20a11b00c69a5f581b2ad771042"
+    "revision": "1022cf9db062cf04aa48d0be5248fe77"
   },
   {
     "url": "tech-QA/css/49-1.html",
-    "revision": "31aef9c966182c482b3a2494af6f0e95"
+    "revision": "d0e287b43ead67dcb363e19f970b2bd6"
   },
   {
     "url": "tech-QA/index.html",
-    "revision": "c239d11254c91d80851b8a4f0e2ac76a"
+    "revision": "c8fc4f08e7ae07594711c20172be339e"
   },
   {
     "url": "tech-QA/js/HFQ-0.html",
-    "revision": "cf647f31f4de05d4784691206d20e1ac"
+    "revision": "5fa5ff546a13146254858b847d332ca6"
   },
   {
     "url": "tech-QA/js/HFQ-1.html",
-    "revision": "b47500f5641c17402a90bfdecc5d60b7"
+    "revision": "c12264a1b0f3e4d3295fab0735c06d58"
   },
   {
     "url": "tech-QA/react/setState.html",
-    "revision": "811e733cb6bf871b79dc0fe8c694e66d"
+    "revision": "67814bed0ca9f4f34f63d46b2dca3b72"
   },
   {
     "url": "tech-QA/react/transaction.html",
-    "revision": "3deb6fa7764b2fafd3ecf8df5fe09aa2"
+    "revision": "2f7c95576094c3fc29a27fb1ef0c6d0b"
   },
   {
     "url": "yideng/index.html",
-    "revision": "1e60c4ed519cf09600bc5d7abb6e3804"
+    "revision": "476d4eaf1e239c058df5110665301110"
   },
   {
     "url": "yideng/week0/ES5.html",
-    "revision": "8e7d78c65dfb301af9f372fde8b07f6b"
+    "revision": "2455b3d1080a8191cf2f04ae192e5ac6"
   },
   {
     "url": "yideng/week0/HTML.html",
-    "revision": "fc2bb3608d2930cd726ef37d948bb4d7"
+    "revision": "08e4f297167f1a04ec639f996407476b"
   },
   {
     "url": "yideng/week1/JS_QA.html",
-    "revision": "022caa0a9c1ccc3bde4570600e3cc2bf"
+    "revision": "37684fffc901013f9fdbfe4ec5a3381e"
   },
   {
     "url": "yideng/week10/designMode.html",
-    "revision": "b14dec1d5dac3588962056ae8cbcdad3"
+    "revision": "f66c653c85a2969defaf4209d290b407"
   },
   {
     "url": "yideng/week2/NodeJS.html",
-    "revision": "d97396cd6a449ca3e890faf8706d75cc"
+    "revision": "5a2fcdb5c5f8f6fd51a339bba1d08099"
   },
   {
     "url": "yideng/week3/webpack.html",
-    "revision": "12e74222aad9adb8f5b03c1a23e240d0"
+    "revision": "ca83c2702614b12066bf07d22e6641b2"
   },
   {
     "url": "yideng/week4/server.html",
-    "revision": "21d6259e591c5f28db9f2064a3e80fc4"
+    "revision": "b5aa1ab85902c7998b66c98f207f1d6a"
   },
   {
     "url": "yideng/week5/CSS.html",
-    "revision": "f6f5f40e4a698e1549b201ee85c88b9a"
+    "revision": "c1b669e9a7ce177cedd9e66ca377a4fc"
   },
   {
     "url": "yideng/week6/React.html",
-    "revision": "96207c87745066f69aef589bf309522c"
+    "revision": "6264b83aa4f9ce418f800f809b77e751"
   },
   {
     "url": "yideng/week6/Typescript.html",
-    "revision": "8417bb0195d7243caab4ced8523678bc"
+    "revision": "b4910f102eeee66b9a37a3d7393aad84"
   },
   {
     "url": "yideng/week6/Vue.html",
-    "revision": "376d5809768dab3b9298d2e79a699ca5"
+    "revision": "3f259a16f4b9f74efa63558da37f08a6"
   },
   {
     "url": "yideng/week6/Vue深入.html",
-    "revision": "1ca88d9b281d209cef73c66a22f74353"
+    "revision": "4b4a4641d0f5be5b7c29043aa9a969c6"
   },
   {
     "url": "yideng/week7/Android.html",
-    "revision": "c5b37f4174f4319a7b52eb8ef3c4d9b4"
+    "revision": "f4ce1746199e9e91e5ac6e75882a2219"
   },
   {
     "url": "yideng/week8/algorithms.html",
-    "revision": "c4e61c7508bd01114862c4024846e386"
+    "revision": "5c9e95ac2e77c9c05ad27311e0efdaf6"
   },
   {
     "url": "yideng/week9/Canvas.html",
-    "revision": "9e1ace055e91656f8e33da3f842db48b"
+    "revision": "bf4745ce0127248e7a383a673cdf1f30"
   }
 ].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
