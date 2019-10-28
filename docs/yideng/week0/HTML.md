@@ -18,7 +18,7 @@
 
 ## window.postMessage
 
-```
+```javascript
 // 父：http://aaa.com 子：http://bbb.com
 var A = window.open('http://bbb.com','title');//父窗口打开子窗口
 A.postMessage('儿子','http://bbb.com');//父窗口向特定子窗口发信息
@@ -35,7 +35,7 @@ window.opener.postMessage('皇阿玛','http://aaa.com');//子窗口向父窗口�
 
 ## image测试网速
 
-```
+```javascript
 //已知图片大小，已知时间差，网速=kb/s
 var startTime = Date.now();
 var image = new Image();
@@ -54,7 +54,7 @@ image.onload = function(){
 
 ## 使用image上报数据，为什么不用Ajax?
 
-例子：https://gsp0.baidu.com/5aAHeD3nKhI2p27j8IqW0jdnxx1xbK/tb/pms/img/st.gif?ts=55w&t=time&sid=jktkesaqljy&dv=3&page=110_25&p=110&z_mapload_first_normal_cityindex=1691
+[例子](https://gsp0.baidu.com/5aAHeD3nKhI2p27j8IqW0jdnxx1xbK/tb/pms/img/st.gif?ts=55w&t=time&sid=jktkesaqljy&dv=3&page=110_25&p=110&z_mapload_first_normal_cityindex=1691)
 
 * 不需要额外的数据接口
 * 上报数据不需要数据返回
@@ -62,12 +62,12 @@ image.onload = function(){
 
 ## iframe对远程localstorage扩容
 
-```
+```javascript
 //<iframe src="storage.html" frameborder="0"></iframe>
 window.frames[0].postMessage('name','11');
 ```
 
-```
+```javascript
 window.addEventListener("message",function(e){
   if(e.source !== window.parent){
     return;
@@ -81,7 +81,7 @@ window.addEventListener("message",function(e){
 * div布局，不进行无意义的包裹
 * 少写html，减少DOM渲染的时间，减少整个文件的大小
 
-```
+```html
 <header>
   <nav></nav>
 </header>

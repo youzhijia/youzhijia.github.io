@@ -105,7 +105,10 @@ module.exports = {
     ],
     sidebar: {
       '/accumulate/':[
-
+        {
+          title: '正则表达式',
+          children: ['正则表达式']
+        }
       ],
       '/studying/':[
 
@@ -130,7 +133,7 @@ module.exports = {
         children: ['week5/CSS']
       }, {
         title: 'MVC MVVM架构那些事',
-        children: ['week6/Typescript', 'week6/Vue', 'week6/React']
+        children: ['week6/Typescript', 'week6/Vue', 'week6/Vue深入', 'week6/React']
       }, {
         title: '前端跨界AI&iOS&PC&Android&IOT',
         children: ['week7/Android']
@@ -187,16 +190,16 @@ module.exports = {
           children: []
         }, {
           title: 'CSS',
-          children: []
+          children: ['css/49-1']
         }, {
           title: 'JS',
-          children: []
+          children: ['js/HFQ-0', 'js/HFQ-1']
         }, {
           title: 'ES6',
           children: []
         }, {
           title: 'React',
-          children: []
+          children: ['react/setState', 'react/transaction']
         }, {
           title: 'Vue',
           children: []
