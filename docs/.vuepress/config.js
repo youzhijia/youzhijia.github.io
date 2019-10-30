@@ -108,6 +108,9 @@ module.exports = {
         {
           title: '正则表达式',
           children: ['正则表达式']
+        },{
+          title: 'CSS',
+          children: ['css/css-api-1', 'css/css-api-2']
         }
       ],
       '/studying/':[
@@ -190,7 +193,7 @@ module.exports = {
           children: []
         }, {
           title: 'CSS',
-          children: ['css/49-1']
+          children: ['css/HFQ-1', 'css/49-1']
         }, {
           title: 'JS',
           children: ['js/HFQ-0', 'js/HFQ-1']
@@ -199,7 +202,7 @@ module.exports = {
           children: []
         }, {
           title: 'React',
-          children: ['react/setState', 'react/transaction']
+          children: ['react/生命周期', 'react/fiber', 'react/HOC', 'react/setState', 'react/transaction', 'react/redux', 'react/reactHooks', 'react/函数式编程']
         }, {
           title: 'Vue',
           children: []
