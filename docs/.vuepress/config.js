@@ -1,8 +1,8 @@
 const basePath = 'blog'
 
 module.exports = {
-  title: '由志佳-FE',
-  description: '当我有了达成某个目标的行动直觉，就要5、4、3、2、1行动起来，打破犹豫不决、过度思考的习惯，简单粗暴的战胜拖延症！',
+  title: '小幼稚-FE',
+  description: '日复一日的积累才有收获，才能成功！学习这件事，不是缺乏时间，而是缺乏努力！',
   head: [
     ['link', { rel: 'icon', href: '/img/favicon.png' }], 
     ['link', { rel: 'manifest', href: '/manifest.json' }],
@@ -107,7 +107,7 @@ module.exports = {
       '/accumulate/':[
         {
           title: '正则表达式',
-          children: ['正则表达式']
+          children: ['RegExp']
         },{
           title: 'CSS',
           children: ['css/css-api-1', 'css/css-api-2']
@@ -118,7 +118,7 @@ module.exports = {
       ],
       '/yideng/': [{
         title: '预读',
-        children: ['week0/ES5', 'week0/HTML']
+        children: ['week0/HTML', 'week0/CSS3d', 'week0/CSS3-1', 'week0/CSS3-2', 'week0/CSS-math', 'week0/ES5','week0/jQuery', 'week0/BackEnd.md', 'week0/BackEnd-Language']
       }, {
         title: 'javascript语言新发展',
         children: ['week1/JS_QA']
@@ -136,7 +136,7 @@ module.exports = {
         children: ['week5/CSS']
       }, {
         title: 'MVC MVVM架构那些事',
-        children: ['week6/Typescript', 'week6/Vue', 'week6/Vue深入', 'week6/React']
+        children: ['week6/Typescript', 'week6/Vue', 'week6/Vue-deep', 'week6/React']
       }, {
         title: '前端跨界AI&iOS&PC&Android&IOT',
         children: ['week7/Android']
@@ -190,7 +190,7 @@ module.exports = {
       '/tech-QA/':[
         {
           title: 'HTML',
-          children: []
+          children: ['html/HFQ-1']
         }, {
           title: 'CSS',
           children: ['css/HFQ-1', 'css/49-1']
@@ -202,7 +202,7 @@ module.exports = {
           children: []
         }, {
           title: 'React',
-          children: ['react/生命周期', 'react/fiber', 'react/HOC', 'react/setState', 'react/transaction', 'react/redux', 'react/reactHooks', 'react/函数式编程']
+          children: ['react/life-cycle', 'react/fiber', 'react/HOC', 'react/setState', 'react/transaction', 'react/redux', 'react/reactHooks', 'react/fn-pro']
         }, {
           title: 'Vue',
           children: []
@@ -211,7 +211,7 @@ module.exports = {
           children: []
         }, {
           title: '浏览器',
-          children: []
+          children: ['浏览器/HFQ-1']
         }, {
           title: '性能优化',
           children: []
