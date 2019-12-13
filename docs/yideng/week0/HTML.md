@@ -6,17 +6,17 @@
 * 目的：保证用户信息的安全，防止恶意的获取网站数据
 * 限制对象（跨域）：Cookie、LocalStorage、IndexDB无法读取；DOM无法获取；Ajax请求无法发送
 
-## 如何设置同源策略？（hosts）
+### 如何设置同源策略？（hosts）
 
 当网页的一级域名相同，二级域名不同时，设置**document.domain**，可以共享cookie
 
-## 完全不同源的网页，如何解决跨域窗口的通讯问题?
+### 完全不同源的网页，如何解决跨域窗口的通讯问题?
 
 * 片段识别符（改变hash）
 * window.name
 * 跨文档通讯API（window.postMessage）
 
-## window.postMessage
+### window.postMessage
 
 ```javascript
 // 父：http://aaa.com 子：http://bbb.com
@@ -26,7 +26,7 @@ A.postMessage('儿子们');//父窗口向所有子窗口发信息
 window.opener.postMessage('皇阿玛','http://aaa.com');//子窗口向父窗口发信息
 ```
 
-## 如何突破同源策略？前端跨域有几种方案?
+### 如何突破同源策略？前端跨域有几种方案?
 
 * HTML标签：img、iframe、script（jsonp）、link（background）
 * JSONP：基本思想：网页通过添加script元素，向服务器请求JSON数据，服务器收到请求后，将数据放到一个指定名字的回调函数里传过来
@@ -52,7 +52,7 @@ image.onload = function(){
 * navigator.sendBeacon() 用于通过HTTP将少量数据异步传输到Web服务器
 * window.requestAnimationFrame() 告诉浏览器希望执行动画并请求浏览器在下一次重绘之前调用指定的函数来更新动画，该方法使用一个回调函数作为参数，这个回调函数会在浏览器重绘之前调用。
 
-## 使用image上报数据，为什么不用Ajax?
+### 使用image上报数据，为什么不用Ajax?
 
 [例子](https://gsp0.baidu.com/5aAHeD3nKhI2p27j8IqW0jdnxx1xbK/tb/pms/img/st.gif?ts=55w&t=time&sid=jktkesaqljy&dv=3&page=110_25&p=110&z_mapload_first_normal_cityindex=1691)
 

@@ -15,7 +15,7 @@
 | 引用 | \> Here is a quote block |
 | 内联代码 | \`code\` |
 | 块级代码 | \`\`\`code block\`\`\` 或 \`\`\`javascript code block\`\`\` |
-| 块级代码高亮行 | \`\`\`js{3} code block\`\`\` |
+| 块级代码高亮行 | \`\`\`js {3} code block\`\`\` |
 | 导入代码片段 可高亮 | <<< @/docs/yideng/week0/ES5.md{11} |
 | 分隔符 | ---- 或 ***** |
 | 生成目录 | \[\[toc\]\] |
