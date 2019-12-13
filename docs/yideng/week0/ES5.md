@@ -198,7 +198,7 @@ function test(){
 test();
 ```
 
-## 面向对象编程（重点！背下来！）
+## 面向对象编程（重点！背！）:small_red_triangle:
 
 * 面向对象编程时，JS没有类的概念，可以用函数替代
 * constructor 就是对应的函数
