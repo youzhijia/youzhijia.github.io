@@ -111,6 +111,9 @@ module.exports = {
         },{
           title: 'CSS',
           children: ['css/css-api-1', 'css/css-api-2']
+        },{
+          title: 'JS',
+          children: ['js/object-api-1', 'js/array-api-1']
         }
       ],
       '/studying/':[
