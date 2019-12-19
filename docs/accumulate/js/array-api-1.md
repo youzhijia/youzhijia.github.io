@@ -1,4 +1,4 @@
-# ES5 Array重点API
+# Array重点API
 
 :heartpulse: 表示返回新数组，不改变老数组
 

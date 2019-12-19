@@ -88,3 +88,13 @@ JSON.parse(text [, function(key,value){}])
 
 1. ES3：Object.prototype.toString.apply(value) === '[object Array]'
 2. ES5：Array.isArray(value)
+
+## Function.prototype.bind
+
+bind返回一个新的函数对象，该函数对象的this绑定到了thisArg参数上。
+
+### call、apply、bind区别
+
+* 相同：作用都是改变this指向
+* 不同：①除了第一个参数之外，call、bind接收的是参数列表，apply接收的是参数数组；②call、apply返回值是“以指定this和参数调用函数的返回值，若无返回值则是undefined”（即会立即执行函数），bind返回值是函数的拷贝（即不会立即执行函数）
+
