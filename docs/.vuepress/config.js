@@ -1,8 +1,8 @@
 const basePath = 'blog'
 
 module.exports = {
-  title: '小幼稚-FE',
-  description: '日复一日的积累才有收获，才能成功！学习这件事，不是缺乏时间，而是缺乏努力！',
+  title: '小幼稚',
+  description: '努力变成理想中的自己',
   head: [
     ['link', { rel: 'icon', href: '/img/favicon.png' }], 
     ['link', { rel: 'manifest', href: '/manifest.json' }],
@@ -15,14 +15,11 @@ module.exports = {
   themeConfig: {
     nav: [
       {text: '主页', link: '/'},
-      {text: '积累', link: '/accumulate/'},
+      // {text: '计划', link: '/plan/'},
+      {text: '基础', link: '/accumulate/'},
       {
         text: '学习',
         items: [
-          {
-            text: '书籍',
-            link: '/studying/'
-          },
           {
             text: '京程一灯',
             link: '/yideng/'
@@ -30,35 +27,39 @@ module.exports = {
           {
             text: '慕课网',
             link: '/muke/'
-          }
-        ]
-      },
-      {
-        text: '工作',
-        items: [
-          {
-            text: '链家网（贝壳）',
-            link: '/lianjia/'
-          }
-        ]
-      },
-      {
-        text: '生活',
-        items: [
-          {
-            text: '阅读',
-            link: '/reading/'
           },
           {
-            text: '育儿',
-            link: '/education/'
-          },
-          {
-            text: '健身',
-            link: '/fitness/'
+            text: '书籍',
+            link: '/studying/'
           }
         ]
       },
+      // {
+      //   text: '工作',
+      //   items: [
+      //     {
+      //       text: '链家网（贝壳）',
+      //       link: '/lianjia/'
+      //     }
+      //   ]
+      // },
+      // {
+      //   text: '生活',
+      //   items: [
+      //     {
+      //       text: '阅读',
+      //       link: '/reading/'
+      //     },
+      //     {
+      //       text: '育儿',
+      //       link: '/education/'
+      //     },
+      //     {
+      //       text: '健身',
+      //       link: '/fitness/'
+      //     }
+      //   ]
+      // },
       {
         text: '面试',
         items: [
@@ -93,17 +94,23 @@ module.exports = {
           }
         ]
       },
-      {
-        text: 'Github',
-        items: [
-          {
-            text: '我的Github',
-            link: 'https://github.com/youzhijia'
-          }
-        ]
-      },
+      // {
+      //   text: 'Github',
+      //   items: [
+      //     {
+      //       text: '我的Github',
+      //       link: 'https://github.com/youzhijia'
+      //     }
+      //   ]
+      // },
     ],
     sidebar: {
+      '/plan/':[
+        {
+          title: '时间管理',
+          children: ['day/day1', 'day/day2']
+        }
+      ],
       '/accumulate/':[
         {
           title: '正则表达式',
@@ -124,7 +131,7 @@ module.exports = {
         children: ['week0/HTML', 'week0/CSS3d', 'week0/CSS3-1', 'week0/CSS3-2', 'week0/CSS-math', 'week0/ES5','week0/jQuery', 'week0/BackEnd.md', 'week0/BackEnd-Language']
       }, {
         title: 'javascript语言新发展',
-        children: ['week1/Linux', 'week1/ES5', 'week1/PHP', 'week1/ES6', 'week1/deep_JS_QA', 'week1/deep_JS', 'week1/deep_ES6', 'week1/deep_TS', 'week1/on_JS_fn', 'week1/on_JS_QA', 'week1/on_homework']
+        children: ['week1/Linux', 'week1/ES5', 'week1/PHP', 'week1/ES6', 'week1/deep_JS_QA', 'week1/deep_JS', 'week1/deep_ES6', 'week1/deep_TS', 'week1/on_Linux_1', 'week1/on_Linux_2', 'week1/on_ES5', 'week1/on_BackEnd', 'week1/on_preread_summary', 'week1/on_honors_day', 'week1/on_JS_fn', 'week1/on_JS_QA', 'week1/on_homework']
       }, {
         title: '大话NodeJS72般变化',
         children: ['week2/NodeJS', 'week2/Express', 'week2/KOA', 'week2/combat_Node', 'week2/deep_NodeJS', 'week2/on_HTTP', 'week2/on_NodeJS', 'week2/on_homework']

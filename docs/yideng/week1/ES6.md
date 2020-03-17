@@ -130,7 +130,7 @@ Man.init();
 
 ### Set、Map
 
-[Set、Map详细介绍](../../accumulate/js/SetMap-api-1.md)
+<!-- [Set、Map详细介绍](../../accumulate/js/SetMap-api-1.md) -->
 
 #### 数组去重
 

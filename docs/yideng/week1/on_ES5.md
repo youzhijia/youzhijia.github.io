@@ -1,0 +1,1 @@
+# EcmaScript5核心知识精髓 :star:
