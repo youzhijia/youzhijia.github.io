@@ -1,6 +1,20 @@
 # ES5核心技术
 
-### 立即执行函数
+## ES5新增语法
+
+#### 严格模式
+#### JSON格式
+#### 添加对象
+[Object重点api](../../accumulate/js/object-api-1.md) :small_red_triangle:
+#### 额外的数组
+[Array重点api](../../accumulate/js/array-api-1.md) :small_red_triangle:
+#### bind
+#### 作用域和闭包
+
+
+> ES5核心技术9min开讲
+
+## 立即执行函数IFEE
 
 ``` javascript
 (function (){
@@ -8,7 +22,7 @@
 })()
 ```
 
-### 变量提升
+## 变量提升
 
 ``` javascript
 var a = 20;

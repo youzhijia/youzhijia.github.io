@@ -1,8 +1,8 @@
 const basePath = 'blog'
 
 module.exports = {
-  title: '小幼稚',
-  description: '努力变成理想中的自己',
+  title: '小柒MM',
+  description: '面向对象面向君，不负代码不负卿',
   head: [
     ['link', { rel: 'icon', href: '/img/favicon.png' }], 
     ['link', { rel: 'manifest', href: '/manifest.json' }],
@@ -24,14 +24,14 @@ module.exports = {
             text: '京程一灯',
             link: '/yideng/'
           },
-          {
-            text: '慕课网',
-            link: '/muke/'
-          },
-          {
-            text: '书籍',
-            link: '/studying/'
-          }
+          // {
+          //   text: '慕课网',
+          //   link: '/muke/'
+          // },
+          // {
+          //   text: '书籍',
+          //   link: '/studying/'
+          // }
         ]
       },
       // {
@@ -67,18 +67,18 @@ module.exports = {
             text: '技术题库',
             link: '/tech-QA/'
           },
-          {
-            text: '项目题库',
-            link: '/project-QA/'
-          },
-          {
-            text: '开放题库', 
-            link: '/open-QA/'
-          },
-          {
-            text: '面经', 
-            link: '/others-QA/'
-          },
+          // {
+          //   text: '项目题库',
+          //   link: '/project-QA/'
+          // },
+          // {
+          //   text: '开放题库', 
+          //   link: '/open-QA/'
+          // },
+          // {
+          //   text: '面经', 
+          //   link: '/others-QA/'
+          // },
         ]
       },
       {
@@ -109,6 +109,10 @@ module.exports = {
         {
           title: '时间管理',
           children: ['day/day1', 'day/day2']
+        },
+        {
+          title: '群聊信息',
+          children: ['chat/321']
         }
       ],
       '/accumulate/':[
@@ -131,7 +135,7 @@ module.exports = {
         children: ['week0/HTML', 'week0/CSS3d', 'week0/CSS3-1', 'week0/CSS3-2', 'week0/CSS-math', 'week0/ES5','week0/jQuery', 'week0/BackEnd.md', 'week0/BackEnd-Language']
       }, {
         title: 'javascript语言新发展',
-        children: ['week1/Linux', 'week1/ES5', 'week1/PHP', 'week1/ES6', 'week1/deep_JS_QA', 'week1/deep_JS', 'week1/deep_ES6', 'week1/deep_TS', 'week1/on_Linux_1', 'week1/on_Linux_2', 'week1/on_ES5', 'week1/on_BackEnd', 'week1/on_preread_summary', 'week1/on_honors_day', 'week1/on_JS_fn', 'week1/on_JS_QA', 'week1/on_homework']
+        children: ['week1/Linux', 'week1/ES5', 'week1/PHP', 'week1/ES6', 'week1/deep_JS_QA', 'week1/deep_JS', 'week1/deep_ES6', 'week1/deep_TS', 'week1/on_Linux_1', 'week1/on_Linux_2', 'week1/on_homework_B', 'week1/on_homework_ES5', 'week1/on_BackEnd', 'week1/on_preread_summary', 'week1/on_honors_day', 'week1/on_JS_fn', 'week1/on_JS_QA', 'week1/on_homework']
       }, {
         title: '大话NodeJS72般变化',
         children: ['week2/NodeJS', 'week2/Express', 'week2/KOA', 'week2/combat_Node', 'week2/deep_NodeJS', 'week2/on_HTTP', 'week2/on_NodeJS', 'week2/on_homework']
