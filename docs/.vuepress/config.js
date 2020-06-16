@@ -15,7 +15,7 @@ module.exports = {
   themeConfig: {
     nav: [
       {text: '主页', link: '/'},
-      // {text: '计划', link: '/plan/'},
+      {text: '计划', link: '/plan/'},
       {text: '基础', link: '/accumulate/'},
       {
         text: '学习',
@@ -23,6 +23,10 @@ module.exports = {
           {
             text: '京程一灯',
             link: '/yideng/'
+          },
+          {
+            text: '一灯每日算法',
+            link: '/yidengALG/'
           },
           // {
           //   text: '慕课网',
@@ -89,8 +93,8 @@ module.exports = {
             link: 'https://panjiachen.github.io/awesome-bookmarks/'
           },
           {
-            text: 'yhlben',
-            link: 'https://yhlben.github.io/blog/'
+            text: 'lmjben',
+            link: 'https://lmjben.github.io/'
           }
         ]
       },
@@ -109,10 +113,6 @@ module.exports = {
         {
           title: '时间管理',
           children: ['day/day1', 'day/day2']
-        },
-        {
-          title: '群聊信息',
-          children: ['chat/321']
         }
       ],
       '/accumulate/':[
@@ -164,6 +164,7 @@ module.exports = {
         title: '设计模式与网络安全专场',
         children: ['week10/designMode', 'week10/on_design_mode', 'week10/on_Hack']
       }],
+      '/yidengALG/': ['array', 'math', 'bin', 'string', 'dice', 'card', 'sports', 'linkedList'],
       '/muke/':[
         {
           title: '免费课',

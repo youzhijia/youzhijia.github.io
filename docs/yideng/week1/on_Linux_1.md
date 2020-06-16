@@ -101,7 +101,7 @@ Linux开发环境初准备讲义
     * nginx：网络服务
     * sysconfig/network-scripts/：跟网络相关，配静态ip的话，在此路径下找网卡（看前缀是否是ifcfg-），其中127.0.0.1地址归ifcfg-lo文件管；
         * 下面是/ifcfg-ens32/目录下网卡相关信息
-        * **默认ip地址是浮动的，如何设置固定ip？**设置IPADDDR=自己想要的ip
+        * **默认ip地址是浮动的，如何设置固定ip？** 设置IPADDDR=自己想要的ip
         * ONBOOT=yes：启动时激活网卡
         * IPADDR=ip地址
         * PREFIX=24：子网掩码

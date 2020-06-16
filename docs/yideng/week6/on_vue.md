@@ -1,5 +1,33 @@
 # Vue源码分析 :star:
 
+::: danger
+**🌺🌺框架源码准备资料**
+
+* 关于框架，如果你想只面vue技术栈的公司，那就好好看vue的东西，如果你想面react技术栈的公司，就认真死磕react，两个都看可能你看不过来，毕竟还是找工作为重，以下是我找老师确认及往期的资料，大家根据自己的情况这周末认真预习。
+
+👉vue源码预习资料（讲课老师给的）
+
+1. 基本vue的api使用，用vue实战一个spa  https://cn.vuejs.org/index.html
+2. 熟悉浏览器history的api  https://developer.mozilla.org/zh-CN/docs/Mozilla/Add-ons/WebExtensions/API/history
+3. 熟悉发布订阅的设计模式    https://blog.csdn.net/ZZB_Bin/article/details/80229456（争取自己用js实现一个）
+4. 熟悉什么是AST抽象语法树 https://zhuanlan.zhihu.com/p/32189701
+5. 熟悉js的事件循环 微任务宏任务  https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/EventLoop
+https://developer.mozilla.org/zh-CN/docs/Web/API/HTML_DOM_API/Microtask_guide
+
+👉react相关资料的学习
+
+* https://fe.rualc.com/note/ 这是一个往期学员的总结react应用方面的，看不看在于自己，他梳理的比较细致些
+
+👉react及vue3源码的梳理
+
+也是一个往期自己写的公众号，写的很多，大家自己去认真看下
+
+👉其他
+
+* Redux源码（二）：https://mp.weixin.qq.com/s/kprwHjwgWVWLS94VAyj5Uw
+* 重学TS：https://mp.weixin.qq.com/mp/homepage?__biz=MzI2MjcxNTQ0Nw==&hid=2&sn=f8161733b7e141eb53065046c644d82a&scene=1&devicetype=iOS13.3.1&version=17000b24&lang=zh_CN&nettype=WIFI&ascene=1&session_us=gh_8438aa280683&fontScale=100&wx_header=1&from=singlemessage&isappinstalled=0
+:::
+
 **前言**
 
 Vue源码分析直播课，前25分钟与技术无关
