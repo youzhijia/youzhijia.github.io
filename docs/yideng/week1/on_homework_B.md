@@ -1442,13 +1442,307 @@ ECStack = [
 ];
 ```
 
+**闭包**
+* 定义：闭包是指那些能够访问自由变量的函数（MDN）、闭包是指有权访问另外一个函数作用域中的变量的函数（红宝书p178）、《JavaScript权威指南》中就讲到：从技术的角度讲，所有的JavaScript函数都是闭包。从实践角度：以下函数才算是闭包：
+    * 即使创建它的上下文已经销毁，它仍然存在（比如，内部函数从父函数中返回）
+    * 在代码中引用了自由变量
+
+**例子**
+```js
+var scope = "global scope";
+function checkscope(){
+    var scope = "local scope";
+    function f(){
+        return scope;
+    }
+    return f;
+}
+var foo = checkscope();
+foo();
+```
+
+这里直接给出简要的执行过程：
+1. 进入全局代码，创建全局执行上下文，全局执行上下文压入执行上下文栈
+2. 全局执行上下文初始化
+3. 执行 checkscope 函数，创建 checkscope 函数执行上下文，checkscope 执行上下文被压入执行上下文栈
+4. checkscope 执行上下文初始化，创建变量对象、作用域链、this等
+5. checkscope 函数执行完毕，checkscope 执行上下文从执行上下文栈中弹出
+6. 执行 f 函数，创建 f 函数执行上下文，f 执行上下文被压入执行上下文栈
+7. f 执行上下文初始化，创建变量对象、作用域链、this等
+8. f 函数执行完毕，f 函数上下文从执行上下文栈中弹出
+
+了解到这个过程，我们应该思考一个问题，那就是：
+* 当 f 函数执行的时候，checkscope 函数上下文已经被销毁了啊(即从执行上下文栈中被弹出)，怎么还会读取到 checkscope 作用域下的 scope 值呢？
+
+我们知道 f 执行上下文维护了一个作用域链：
+```js
+fContext = {
+    Scope: [AO, checkscopeContext.AO, globalContext.VO],
+}
+```
+
+**call和apply的模拟实现**
+
+call() 方法在使用一个指定的 this 值和若干个指定的参数值的前提下调用某个函数或方法。
+
+```js
+Function.prototype.call2 = function (context) {
+    var context = context || window;
+    context.fn = this;
+    var args = [];
+    for(var i = 1, len = arguments.length; i < len; i++) {
+        args.push('arguments[' + i + ']');
+    }
+    var result = eval('context.fn(' + args +')');
+    delete context.fn
+    return result;
+}
+
+Function.prototype.apply = function (context, arr) {
+    var context = Object(context) || window;
+    context.fn = this;
+    var result;
+    if (!arr) {
+        result = context.fn();
+    }
+    else {
+        var args = [];
+        for (var i = 0, len = arr.length; i < len; i++) {
+            args.push('arr[' + i + ']');
+        }
+        result = eval('context.fn(' + args + ')')
+    }
+    delete context.fn
+    return result;
+}
+```
+
+**New**
+
+new 运算符创建一个用户定义的对象类型的实例或具有构造函数的内置对象类型之一
+```js
+function objectFactory() {
+    var obj = new Object(),
+    Constructor = [].shift.call(arguments);
+    obj.__proto__ = Constructor.prototype;
+    var ret = Constructor.apply(obj, arguments);
+    return typeof ret === 'object' ? ret : obj;
+};
+
+function Otaku (name, age) {
+    this.name = name;
+    this.age = age;
+    this.habit = 'Games';
+}
+
+Otaku.prototype.strength = 60;
+Otaku.prototype.sayYourName = function () {
+    console.log('I am ' + this.name);
+}
+
+var person = objectFactory(Otaku, 'Kevin', '18')
+console.log(person.name) // Kevin
+console.log(person.habit) // Games
+console.log(person.strength) // 60
+console.log(person.age) // 18
+console.log(person.sayYourName())//I am Kevin
+```
+
+**柯里化**
+
+在数学和计算机科学中，柯里化是一种将使用多个参数的一个函数转换成一系列使用一个参数的函数的技术。
+
+乞丐版：完整版很深
+```js
+var curry = function (fn) {
+    var args = [].slice.call(arguments, 1);
+    return function() {
+        var newArgs = args.concat([].slice.call(arguments));
+        return fn.apply(this, newArgs);
+    };
+};
+function add(a, b) {
+    return a + b;
+}
+var addCurry = curry(add, 1, 2);
+addCurry() // 3//或者var addCurry = curry(add, 1);addCurry(2) // 3//或者var addCurry = curry(add);addCurry(1, 2) // 3
+```
+
+**继承**
+
+其他都是浮云，一招搞定
+```js
+function Rectangle(length,width){
+    this.l = length
+    this.w = width
+}
+Rectangle.prototype.getArea = function(){
+    return this.l*this.w
+}
+function Square(length){
+    Rectangle.call(this,length,length)
+}
+Square.prototype = Object.create(Rectangle.prototype,{
+    constructor:{
+      value:Square
+    }
+})
+var square = new Square(3)
+console.log(square.getArea())
+console.log(square instanceof Square)
+console.log(square instanceof Rectangle)
+```
+
+**原型链**
+![原型链](../img/原型链.jpeg)
+
 ## 【附】讲透深克隆
 
-```js
-```
+**定义**
+* **浅拷贝**：创建一个新对象，这个对象有着原始对象属性值的一份精确拷贝。如果属性是基本类型，拷贝的就是基本类型的值，如果属性是引用类型，拷贝的就是内存地址 ，所以如果其中一个对象改变了这个地址，就会影响到另一个对象。
+* **深拷贝**：将一个对象从内存中完整的拷贝一份出来,从堆内存中开辟一个新的区域存放新对象,且修改新对象不会影响原对象
 
 ```js
+// 浅克隆
+Object.assign(target, ...sources)
+let target = {};
+let source = { a: { b: 2 } };
+Object.assign(target, source);
+target.a===source.a   //true
 ```
 
+**判断类型**
+
+**typeof**
+
+bigint、undefined、function、object、number、boolean、symbol、string
+
+**instanceof**
+
+原理就是只要右边变量的 prototype 在左边变量的原型链上即可。
+
+**Object.prototype.toString**
+
+ES5 规范地址：https://es5.github.io/#x15.2.4.2。
+
+**丐中丐：业务最实用**
+
+`let co = JSON.parse(JSON.stringify(o));`
+
+**正则、拷贝函数、循环引用等-测试用例**
+```JS
+function Obj() {
+    this.func = function () {
+        alert(1) 
+    };
+    this.obj = {a:1};
+    this.arr = [1,2,3];
+    this.und = undefined;
+    this.reg = /123/;
+    this.date = new Date(0);
+    this.NaN = NaN
+    this.infinity = Infinity
+    this.sym = Symbol(1)
+    this.set = new Set([1,2,3])
+    this.map = new Map([['a',1],['b',9]])
+}
+let obj1 = new Obj();
+Object.defineProperty(obj1,'innumerable',{
+    enumerable:false,
+    value:'innumerable'
+})
+console.log({obj1});
+let str = JSON.stringify(obj1);
+let obj2 = JSON.parse(str);
+console.log({obj2});
+```
+
+**基础版本**
+```JS
+function deepCopy(obj) {
+  if(typeof obj === "object") {
+      if(obj.constructor === Array) {
+          var newArr = []
+          for(var i = 0; i < obj.length; i++) newArr.push(obj[i])
+          return newArr
+      } else {
+          var newObj = {}
+          for(var key in obj) {
+              newObj[key] = this.deepCopy(obj[key])
+          }
+          return newObj
+      }
+  } else {
+      return obj
+  }
+}
+```
+
+**复杂版本**
+正确但无面试意义版本
+
+https://github.com/lodash/lodash/blob/master/.internal/baseClone.js
+
+一个图
+
+**面试终极武器**
 ```js
+const isComplexDataType = obj => (typeof obj === 'object' || typeof obj === 'function') && (obj !== null)
+
+const deepClone = function (obj, hash = new WeakMap()) {
+    if (hash.has(obj)) return hash.get(obj)
+    let type = [Date,RegExp,Set,Map,WeakMap,WeakSet]
+    if (type.includes(obj.constructor)) return new obj.constructor(obj);      
+
+    //如果成环了,参数obj = obj.loop = 最初的obj 会在WeakMap中找到第一次放入的obj提前返回第一次放入WeakMap的cloneObj
+    let allDesc = Object.getOwnPropertyDescriptors(obj);  //遍历传入参数所有键的特性
+    let cloneObj = Object.create(Object.getPrototypeOf(obj), allDesc); //继承原型
+    hash.set(obj, cloneObj)
+    for (let key of Reflect.ownKeys(obj)) {   //Reflect.ownKeys(obj)可以拷贝不可枚举属性和符号类型
+        // 如果值是引用类型(非函数)则递归调用deepClone
+        cloneObj[key] =
+            (isComplexDataType(obj[key]) && typeof obj[key] !== 'function') ?
+                deepClone(obj[key], hash) : obj[key];
+    }
+    return cloneObj;
+};
+
+let obj = {
+    bigInt: BigInt(12312),
+    set:new Set([2]),
+    map:new Map([['a',22],['b',33]]),
+    num: 0,
+    str: '',
+    boolean: true,
+    unf: undefined,
+    nul: null,
+    obj: {
+        name: '我是一个对象',
+        id: 1
+    },
+    arr: [0, 1, 2],
+    func: function () {
+        console.log('我是一个函数')
+    },
+    date: new Date(0),
+    reg: new RegExp('/我是一个正则/ig'),
+    [Symbol('1')]: 1,
+};
+
+Object.defineProperty(obj, 'innumerable', {
+    enumerable: false,
+    value: '不可枚举属性'
+});
+
+obj = Object.create(obj, Object.getOwnPropertyDescriptors(obj))
+obj.loop = obj
+let cloneObj = deepClone(obj);
+console.log('obj', obj);
+console.log('cloneObj', cloneObj);
+
+for (let key of Object.keys(cloneObj)) {
+    if (typeof cloneObj[key] === 'object' || typeof cloneObj[key] === 'function') {
+        console.log(`${key}相同吗？ `, cloneObj[key] === obj[key])
+    }
+}
 ```
